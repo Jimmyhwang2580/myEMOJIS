@@ -7,7 +7,6 @@ const shiftBtn = document.getElementById("shift-btn")
 const myEmojis = ["👨‍💻", "👨‍👩‍👧‍👦", "🇰🇷", "🌯"]
 
 function renderEmojis() {
-    
     emojiContainer.innerHTML = ""
     for (let i = 0; i < myEmojis.length; i++) {
         const emoji = document.createElement('span')
@@ -20,7 +19,6 @@ renderEmojis()
 
 
 pushBtn.addEventListener("click", function(){
-    
     if (emojiInput.value) {
         myEmojis.push(emojiInput.value)
         emojiInput.value = ""
@@ -30,7 +28,6 @@ pushBtn.addEventListener("click", function(){
 
 
 unshiftBtn.addEventListener("click", function(){
-    
     if (emojiInput.value) {
         myEmojis.unshift(emojiInput.value)
         emojiInput.value = ""
