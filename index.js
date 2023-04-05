@@ -40,12 +40,16 @@ unshiftBtn.addEventListener("click", function(){
 
 
 popBtn.addEventListener("click", function(){
-    myEmojis.pop()
-    renderEmojis()
+   if (emojiInput.value) {
+        myEmojis.pop()
+        renderEmojis()
+    }
 })
 
 
 shiftBtn.addEventListener("click", function(){
-    myEmojis.shift()
-    renderEmojis()
+    if (emojiInput.value) {
+        myEmojis.shift()
+        renderEmojis()
+    }
 })
